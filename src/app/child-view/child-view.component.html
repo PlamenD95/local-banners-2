@@ -1,0 +1,9 @@
+<button igxButton="contained" type="button" igxRipple class="button">
+  {{ buttonText }}
+</button>
+<igx-grid [data]="northwindSwaggerCategoryDto" primaryKey="categoryId" [pagingMode]="1" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+  <igx-paginator></igx-paginator>
+  <igx-column field="categoryId" dataType="number" header="categoryId" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="description" dataType="string" header="description" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="name" dataType="string" header="name" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+</igx-grid>
